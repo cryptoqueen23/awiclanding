@@ -1,1 +1,5 @@
-AWIC self-contained deployment build. Upload index.html and the member folder to the repository root. CSS and JavaScript are embedded directly in each HTML file, so missing asset paths cannot break the design.
+# AWIC Website + Member Hub Concept
+
+Deploy the contents of this folder at the repository root.
+
+The landing-page JavaScript is placed at the end of the HTML so the hero and all reveal sections load correctly on Vercel.

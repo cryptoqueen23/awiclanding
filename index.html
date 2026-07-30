@@ -18,22 +18,7 @@
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 </style>
-  <script defer>
-const toggle=document.querySelector('.nav-toggle');
-const nav=document.querySelector('.main-nav');
-function closeNav(){nav?.classList.remove('open');toggle?.setAttribute('aria-expanded','false');toggle?.querySelector('.sr-only')&&(toggle.querySelector('.sr-only').textContent='Open navigation')}
-toggle?.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('.sr-only').textContent=open?'Close navigation':'Open navigation'});
-nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){closeNav();toggle.focus()}});
-const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const reveals=document.querySelectorAll('.reveal');
-if(reduce){reveals.forEach(el=>el.classList.add('visible'))}else{const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}}),{threshold:.12});reveals.forEach(el=>ro.observe(el))}
-const counters=document.querySelectorAll('[data-count]');
-const format=n=>n>=1000?`${Math.round(n/1000)}K+`:`${n}+`;
-const countObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=Number(el.dataset.count);if(reduce){el.textContent=format(target)}else{let start;const run=t=>{start??=t;const p=Math.min((t-start)/1300,1);el.textContent=format(Math.round(target*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(run)};requestAnimationFrame(run)}countObserver.unobserve(el)}),{threshold:.5});counters.forEach(el=>countObserver.observe(el));
-const messages=['Member connection made in London','New mentor match in Singapore','Speaker profile added from Toronto','Chapter event announced in Austin'];let mi=0;const activity=document.getElementById('activityText');if(activity&&!reduce)setInterval(()=>{mi=(mi+1)%messages.length;activity.textContent=messages[mi]},4200);
 
-</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
@@ -184,5 +169,21 @@ const messages=['Member connection made in London','New mentor match in Singapor
     <div class="shell footer-grid"><div class="brand footer-brand"><span class="brand-icon" aria-hidden="true">W</span><span><strong>AWIC</strong><small>Association for Women in Cryptocurrency</small></span></div><div><h2 class="sr-only">Footer navigation</h2><a href="#mission">About</a><a href="#membership">Membership</a><a href="#events">Events</a><a href="#learning">Learning</a></div><div><a href="member/index.html#dashboard">Member Login</a><a href="#partners">Partners</a><a href="#top">Privacy</a><a href="#top">Terms</a></div></div>
     <div class="shell footer-bottom"><p>Independent redesign concept. Not an official AWIC website.</p><a href="https://tree.phoenixsecuritas.com" target="_blank" rel="noopener noreferrer">Mockup Site by Phoenix Securitas Tech</a></div>
   </footer>
+  <script>
+const toggle=document.querySelector('.nav-toggle');
+const nav=document.querySelector('.main-nav');
+function closeNav(){nav?.classList.remove('open');toggle?.setAttribute('aria-expanded','false');toggle?.querySelector('.sr-only')&&(toggle.querySelector('.sr-only').textContent='Open navigation')}
+toggle?.addEventListener('click',()=>{const open=!nav.classList.contains('open');nav.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open));toggle.querySelector('.sr-only').textContent=open?'Close navigation':'Open navigation'});
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeNav));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav?.classList.contains('open')){closeNav();toggle.focus()}});
+const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const reveals=document.querySelectorAll('.reveal');
+if(reduce){reveals.forEach(el=>el.classList.add('visible'))}else{const ro=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}}),{threshold:.12});reveals.forEach(el=>ro.observe(el))}
+const counters=document.querySelectorAll('[data-count]');
+const format=n=>n>=1000?`${Math.round(n/1000)}K+`:`${n}+`;
+const countObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;const target=Number(el.dataset.count);if(reduce){el.textContent=format(target)}else{let start;const run=t=>{start??=t;const p=Math.min((t-start)/1300,1);el.textContent=format(Math.round(target*(1-Math.pow(1-p,3))));if(p<1)requestAnimationFrame(run)};requestAnimationFrame(run)}countObserver.unobserve(el)}),{threshold:.5});counters.forEach(el=>countObserver.observe(el));
+const messages=['Member connection made in London','New mentor match in Singapore','Speaker profile added from Toronto','Chapter event announced in Austin'];let mi=0;const activity=document.getElementById('activityText');if(activity&&!reduce)setInterval(()=>{mi=(mi+1)%messages.length;activity.textContent=messages[mi]},4200);
+
+</script>
 </body>
 </html>
