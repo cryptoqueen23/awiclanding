@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Concept redesign for the Association for Women in Cryptocurrency." />
+  <meta name="theme-color" content="#080319" />
+  <title>AWIC | Public Website Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="mockup-banner">
+    <span>Mockup Site by</span>
+    <a href="https://tree.phoenixsecuritas.com" target="_blank" rel="noopener">Phoenix Securitas Tech</a>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="AWIC home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 56 56" role="img">
+            <defs>
+              <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff2fa4"/>
+                <stop offset="50%" stop-color="#a747ff"/>
+                <stop offset="100%" stop-color="#27d8ff"/>
+              </linearGradient>
+            </defs>
+            <path d="M28 2 52 16v24L28 54 4 40V16z" fill="none" stroke="url(#brandGradient)" stroke-width="3"/>
+            <path d="M17 35 28 11l11 24-11 10z" fill="none" stroke="url(#brandGradient)" stroke-width="3"/>
+            <circle cx="28" cy="28" r="4" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>AWIC</strong>
+          <small>Association for Women<br>in Cryptocurrency</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+        <a href="#membership">Membership</a>
+        <a href="#events">Events</a>
+        <a href="#education">Education</a>
+        <a href="#community">Community</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-login" href="#login">Member Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pad">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">The global network for women building the future of finance</span>
+          <h1>
+            Empowering Women to Shape the Future of
+            <span class="gradient-text">Digital Finance</span>
+          </h1>
+          <p>
+            Connect with innovators, leaders, founders, investors, and builders advancing
+            blockchain, cryptocurrency, AI, and emerging technology.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#membership">Become a Member</a>
+            <a class="button button-secondary" href="#community">Explore the Community</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Community highlights">
+            <div>
+              <strong>Global</strong>
+              <span>Community</span>
+            </div>
+            <div>
+              <strong>Industry</strong>
+              <span>Education</span>
+            </div>
+            <div>
+              <strong>Career</strong>
+              <span>Opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Global AWIC network illustration">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="globe">
+            <div class="globe-grid"></div>
+            <span class="node n1"></span>
+            <span class="node n2"></span>
+            <span class="node n3"></span>
+            <span class="node n4"></span>
+            <span class="node n5"></span>
+            <span class="node n6"></span>
+          </div>
+          <div class="floating-card card-top">
+            <span class="status-dot"></span>
+            <div>
+              <strong>Global Chapters</strong>
+              <small>Connecting women worldwide</small>
+            </div>
+          </div>
+          <div class="floating-card card-bottom">
+            <span class="mini-icon">◎</span>
+            <div>
+              <strong>Web3 Leadership</strong>
+              <small>Learn. Connect. Lead.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stats reveal">
+        <article><strong data-count="50">0</strong><span>Global Chapters</span></article>
+        <article><strong data-count="10000">0</strong><span>Community Members</span></article>
+        <article><strong data-count="75">0</strong><span>Annual Programs</span></article>
+        <article><strong data-count="120">0</strong><span>Industry Partners</span></article>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="AWIC focus areas">
+      <div class="marquee-track">
+        <span>Blockchain</span><span>Cryptocurrency</span><span>Artificial Intelligence</span><span>Web3</span><span>Digital Assets</span><span>FinTech</span>
+        <span>Blockchain</span><span>Cryptocurrency</span><span>Artificial Intelligence</span><span>Web3</span><span>Digital Assets</span><span>FinTech</span>
+      </div>
+    </section>
+
+    <section id="membership" class="section-pad">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Why AWIC</span>
+          <h2>A community designed to help women <span class="gradient-text">advance</span></h2>
+          <p>Build relationships, develop expertise, find opportunities, and gain visibility across the digital economy.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon">◇</span>
+            <h3>Build Your Network</h3>
+            <p>Connect with founders, executives, investors, creators, educators, and emerging leaders.</p>
+            <a href="#community">Explore community <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">△</span>
+            <h3>Grow Your Expertise</h3>
+            <p>Access practical education, expert-led sessions, resources, and industry insights.</p>
+            <a href="#education">View learning paths <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">✦</span>
+            <h3>Increase Your Visibility</h3>
+            <p>Share your work, speak at events, mentor members, and become part of the global conversation.</p>
+            <a href="#events">Find opportunities <span>→</span></a>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon">◎</span>
+            <h3>Shape the Future</h3>
+            <p>Help create a more inclusive, innovative, and responsible financial technology ecosystem.</p>
+            <a href="#about">Learn about our mission <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="section-pad global-section">
+      <div class="container global-grid">
+        <div class="global-map reveal" aria-hidden="true">
+          <svg viewBox="0 0 800 430">
+            <defs>
+              <linearGradient id="mapLine" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ff2fa4"/>
+                <stop offset="100%" stop-color="#27d8ff"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path class="map-outline" d="M47 144 99 102l51 13 25-37 64 21 21 53 46 12 20 65-44 31-63-14-51 35-70-18-24-45-44-17zm300-40 48-39 49 13 17 50 42 9 18 47-30 43-53-7-29 34-45-18-11-48-34-28zm179-18 47-33 62 14 42 48-24 47 36 31-43 42-62-12-33 31-35-37 16-50-30-35zm-164 201 67-24 63 26-20 54-66 23-60-22z" fill="rgba(255,255,255,.02)" stroke="rgba(255,255,255,.16)" stroke-width="2"/>
+            <g stroke="url(#mapLine)" stroke-width="2" opacity=".65">
+              <path d="M145 160 Q290 60 410 150" />
+              <path d="M145 160 Q335 330 570 170" />
+              <path d="M410 150 Q520 70 620 145" />
+              <path d="M410 150 Q440 260 410 320" />
+              <path d="M570 170 Q500 310 410 320" />
+            </g>
+            <g fill="#fff" filter="url(#glow)">
+              <circle cx="145" cy="160" r="6"/><circle cx="410" cy="150" r="6"/><circle cx="570" cy="170" r="6"/><circle cx="410" cy="320" r="6"/><circle cx="620" cy="145" r="6"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="global-copy reveal">
+          <span class="eyebrow">A truly global network</span>
+          <h2>Local connections. <span class="gradient-text">Global impact.</span></h2>
+          <p>
+            AWIC brings together women across countries, cultures, disciplines, and career stages.
+            Our chapters and digital programs make it easier to connect wherever you are.
+          </p>
+          <ul class="check-list">
+            <li>Regional and virtual chapters</li>
+            <li>Member-led networking and mentorship</li>
+            <li>International events and collaborations</li>
+            <li>Cross-industry leadership opportunities</li>
+          </ul>
+          <a class="text-link" href="#membership">Find your place in the network <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section-pad">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <span class="eyebrow">Upcoming events</span>
+            <h2>Learn, connect, and lead</h2>
+          </div>
+          <a class="button button-secondary" href="#events-list">View All Events</a>
+        </div>
+
+        <div id="events-list" class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-art event-art-one">
+              <span class="event-badge">Virtual</span>
+              <div class="event-date"><strong>18</strong><span>SEP</span></div>
+            </div>
+            <div class="event-body">
+              <p class="event-type">Leadership Series</p>
+              <h3>Women Leading the Digital Asset Economy</h3>
+              <p>Executive perspectives on innovation, regulation, leadership, and the next era of finance.</p>
+              <div class="event-meta"><span>1:00 PM ET</span><span>Online</span></div>
+            </div>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-art event-art-two">
+              <span class="event-badge">In Person</span>
+              <div class="event-date"><strong>04</strong><span>OCT</span></div>
+            </div>
+            <div class="event-body">
+              <p class="event-type">Networking</p>
+              <h3>AWIC Boston Blockchain Reception</h3>
+              <p>An evening of meaningful connections with founders, investors, technologists, and advocates.</p>
+              <div class="event-meta"><span>6:00 PM ET</span><span>Boston, MA</span></div>
+            </div>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-art event-art-three">
+              <span class="event-badge">Workshop</span>
+              <div class="event-date"><strong>22</strong><span>OCT</span></div>
+            </div>
+            <div class="event-body">
+              <p class="event-type">Education</p>
+              <h3>AI, Blockchain, and the Future of Work</h3>
+              <p>A practical session for professionals navigating emerging technology and career change.</p>
+              <div class="event-meta"><span>12:00 PM ET</span><span>Online</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section-pad education-section">
+      <div class="container education-grid">
+        <div class="education-copy reveal">
+          <span class="eyebrow">Learning built for the real world</span>
+          <h2>Turn curiosity into <span class="gradient-text">capability</span></h2>
+          <p>
+            From blockchain foundations to leadership and emerging technology, AWIC learning experiences
+            help members build useful skills and confidence.
+          </p>
+          <div class="learning-list">
+            <div><span>01</span><p><strong>Foundations</strong><small>Blockchain, crypto, digital assets, security</small></p></div>
+            <div><span>02</span><p><strong>Career Growth</strong><small>Leadership, visibility, speaking, mentorship</small></p></div>
+            <div><span>03</span><p><strong>Emerging Tech</strong><small>AI, tokenization, decentralized systems</small></p></div>
+          </div>
+          <a class="button button-primary" href="#membership">Explore Member Learning</a>
+        </div>
+
+        <div class="learning-dashboard reveal">
+          <div class="dash-top">
+            <span>AWIC Learning Hub</span>
+            <span class="live-pill">Member Preview</span>
+          </div>
+          <div class="course-card">
+            <div class="course-icon">◈</div>
+            <div>
+              <small>Featured learning path</small>
+              <h3>Blockchain Strategy for Professionals</h3>
+              <div class="progress"><span style="width:72%"></span></div>
+              <p>6 of 8 modules complete</p>
+            </div>
+          </div>
+          <div class="mini-course-grid">
+            <div><span>AI</span><strong>Responsible AI</strong><small>4 modules</small></div>
+            <div><span>WEB3</span><strong>Digital Assets</strong><small>7 modules</small></div>
+            <div><span>LEAD</span><strong>Executive Presence</strong><small>5 modules</small></div>
+            <div><span>SAFE</span><strong>Crypto Security</strong><small>6 modules</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad story-section">
+      <div class="container story-grid">
+        <blockquote class="reveal">
+          “The future of finance is being written now. Women should not merely participate in that future. We should help lead it.”
+        </blockquote>
+        <div class="story-copy reveal">
+          <span class="eyebrow">Our mission</span>
+          <h2>More women at every table where the future is being built</h2>
+          <p>
+            AWIC exists to create pathways for education, leadership, entrepreneurship, collaboration,
+            and long-term participation in cryptocurrency and emerging technology.
+          </p>
+          <a class="text-link" href="#membership">Discover membership <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section-pad sponsor-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Built through partnership</span>
+          <h2>Partner with a growing global community</h2>
+          <p>Support education, inclusion, leadership, and innovation while connecting your brand with AWIC members.</p>
+        </div>
+        <div class="logo-wall reveal" aria-label="Sample sponsor logo placeholders">
+          <span>BLOCKFORGE</span><span>LEDGER LABS</span><span>NEXUS</span><span>CHAINHOUSE</span><span>VECTOR</span><span>FINVERSE</span>
+        </div>
+        <div class="sponsor-cta reveal">
+          <p><strong>Interested in sponsorship?</strong> Explore opportunities to support AWIC programs and events.</p>
+          <a class="button button-primary" href="#contact">Become a Partner</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="newsletter-section">
+      <div class="container newsletter-grid">
+        <div>
+          <span class="eyebrow">Stay connected</span>
+          <h2>Get AWIC news, events, and opportunities</h2>
+        </div>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" placeholder="Enter your email address" required />
+          <button class="button button-primary" type="submit">Join the List</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 56 56">
+              <path d="M28 2 52 16v24L28 54 4 40V16z" fill="none" stroke="#ff2fa4" stroke-width="3"/>
+              <path d="M17 35 28 11l11 24-11 10z" fill="none" stroke="#27d8ff" stroke-width="3"/>
+            </svg>
+          </span>
+          <span class="brand-copy"><strong>AWIC</strong><small>Association for Women<br>in Cryptocurrency</small></span>
+        </a>
+        <p>A global community advancing women across cryptocurrency, blockchain, AI, and emerging technology.</p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="#membership">Membership</a>
+        <a href="#events">Events</a>
+        <a href="#education">Education</a>
+        <a href="#community">Community</a>
+      </div>
+
+      <div>
+        <h3>Organization</h3>
+        <a href="#about">About</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Member Login</a>
+      </div>
+
+      <div>
+        <h3>Connect</h3>
+        <a href="#linkedin">LinkedIn</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#x">X / Twitter</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>Concept redesign created for portfolio demonstration.</p>
+      <p>Mockup Site by <a href="https://tree.phoenixsecuritas.com" target="_blank" rel="noopener">Phoenix Securitas Tech</a></p>
+    </div>
+  </footer>
+</body>
+</html>
